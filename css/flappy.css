@@ -1,0 +1,81 @@
+* { 
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url(../fonts/Pixel.ttf);
+}
+
+[wm-flappy] {
+    position: relative;
+    border: 5px solid #13191f;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    overflow: hidden;
+    background-image: url('../imgs/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #373d79, #1b1e3b);
+    border: 2px solid black;
+}
+
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #373d79, #1b1e3b);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 100;
+}
+
+.restart { 
+    position: relative;
+    left: 26%;
+    top: 45%;
+    margin-right: 10px;
+    width: 200px;
+    height: 100x;
+    border: none;
+    background-color: rgb(67, 118, 165);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    cursor: pointer;
+}
